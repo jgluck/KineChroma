@@ -1,0 +1,19 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:JonTryThree;assembly=JonTryThree" xmlns:WpfViewers="clr-namespace:Microsoft.Samples.Kinect.WpfViewers;assembly=Microsoft.Samples.Kinect.WpfViewers" x:Class="JonTryThree.MainWindow"
+        Title="MainWindow" Height="418.398" Width="620.377" Closing="Window_Closing" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="83*"/>
+            <ColumnDefinition Width="177*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="DirectionLabel" Content="Direction:" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top" FontSize="48" Height="107" Width="236" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="DirText" Margin="0,74,120.204,0" TextWrapping="Wrap" Text="Undefined" VerticalAlignment="Top" Height="73" Grid.Column="1" FontSize="36" HorizontalAlignment="Right" Width="244"/>
+        <Image x:Name="kinectImage" HorizontalAlignment="Left" Height="164" Margin="10,203,0,0" VerticalAlignment="Top" Width="295" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="beamAngleText" Grid.Column="1" HorizontalAlignment="Left" Margin="256.476,203,0,0" TextWrapping="Wrap" Text="Beam Angle: " VerticalAlignment="Top" Width="144"/>
+        <TextBlock x:Name="SourceAngleText" Grid.Column="1" HorizontalAlignment="Left" Margin="256.476,224,0,0" TextWrapping="Wrap" Text="Source Angle: " VerticalAlignment="Top" Width="144"/>
+        <TextBlock x:Name="AmplitudeText" Grid.Column="1" HorizontalAlignment="Left" Margin="256.476,244,0,0" TextWrapping="Wrap" Text="Amplitude:" VerticalAlignment="Top" Width="144"/>
+
+    </Grid>
+</Window>
